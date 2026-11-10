@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>연결 중</title>
+<p id="m">테슬라 연결을 마무리하는 중입니다...</p>
+<script>
+// 테슬라 로그인 뒤 돌아오는 자리: 받은 코드를 안경 서버로 그대로 넘긴다.
+var q = location.search || "";
+if (q.indexOf("code=") >= 0) location.replace("https://ttqwuttlupnjgjpxnqzk.supabase.co/functions/v1/smooth-endpoint" + q + "&tesla=cb");
+else document.getElementById("m").textContent = "받은 코드가 없습니다. 처음부터 다시 시도해 주세요.";
+</script>
